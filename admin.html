@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Админ Панель</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <header>
+        <h1>Админ Панель</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Управление Товарами</h2>
+            <form id="productForm">
+                <input type="hidden" id="productId" name="productId">
+                <label for="productName">Название:</label>
+                <input type="text" id="productName" name="name" required>
+                <label for="productDescription">Описание:</label>
+                <textarea id="productDescription" name="description" required></textarea>
+                <label for="productPrice">Цена:</label>
+                <input type="number" id="productPrice" name="price" required>
+                <label for="productStock">Запас:</label>
+                <input type="number" id="productStock" name="stock" required>
+                <label for="Brand">Бренд:</label>
+                <select id="Brand" name="brand" required>
+                    <option value="oculus">Oculus</option>
+                    <option value="pico">Pico</option>
+                    <option value="apple">Apple</option>
+                    <option value="pimax">Pimax</option>
+                    <option value="htc">HTC</option>
+                </select>
+                <label for="productImage">Изображение:</label>
+                <input type="file" id="productImage" name="image">
+                <img id="productImagePreview" src="" alt="Превью изображения" style="max-height: 100px; display: none;">
+                <label for="isFeatured">Популярные:</label>
+                <input type="checkbox" id="isFeatured" name="isFeatured">
+                <button type="submit">Сохранить</button>
+            </form>
+            <ul id="productList" class="item-list"></ul>
+        </section>
+        <section>
+            <h2>Управление Слайдами</h2>
+            <form id="slideForm" enctype="multipart/form-data">
+                <input type="hidden" id="slideId">
+                <label for="slideImageFile">Изображение:</label>
+                <input type="file" id="slideImageFile" name="image" required>
+                <img id="slideImagePreview" src="" alt="Превью изображения" style="max-height: 100px; display: none;">
+                <label for="slideDescription">Описание:</label>
+                <textarea id="slideDescription" name="description" required></textarea>
+                <label for="slideModelName">Название Модели:</label>
+                <input type="text" id="slideModelName" name="modelName" required>
+                <button type="submit">Сохранить</button>
+            </form>
+            <ul id="slideList" class="item-list"></ul>
+        </section>
+        <section>
+            <h2>Управление Отзывами</h2>
+            <ul id="reviewList" class="review-list"></ul>
+        </section>
+        <section>
+            <h2>Управление Заказами</h2>
+            <ul id="orderList" class="order-list"></ul>
+            <div class="order-details" style="display: none;">
+                <h3>Детали заказа</h3>
+                <ul id="orderDetailsList"></ul>
+            </div>
+        </section>
+        <section>
+            <h2>Статистика</h2>
+            <ul id="statisticsList" class="statistics-list"></ul>
+        </section>
+    </main>
+    <script src="admin.js"></script>
+</body>
+</html>

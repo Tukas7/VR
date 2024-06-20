@@ -1,0 +1,102 @@
+.product-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    padding: 2rem;
+}
+
+.product-image {
+    flex: 1;
+    max-width: 400px;
+    text-align: center;
+}
+
+.product-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-info {
+    flex: 2;
+    max-width: 600px;
+}
+
+.product-info h2 {
+    font-size: 2rem;
+    margin-bottom: 16px;
+}
+
+.product-info p {
+    margin: 8px 0;
+    font-size: 1.1rem;
+}
+
+.product-info #productPrice {
+    font-size: 1.5rem;
+    color: #4CAF50;
+    margin-top: 16px;
+}
+
+.product-info button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+}
+
+.product-info button:hover {
+    background-color: #45a049;
+}
+.product-reviews {
+    margin-top: 2rem;
+}
+
+.product-reviews h3, .product-reviews h4 {
+    margin-bottom: 1rem;
+}
+
+.product-reviews ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 2rem;
+}
+
+.product-reviews ul li {
+    background-color: #1e1e1e;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.product-reviews form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.product-reviews form label {
+    font-size: 1rem;
+}
+
+.product-reviews form input, .product-reviews form select, .product-reviews form textarea, .product-reviews form button {
+    padding: 0.5rem;
+    border: 1px solid #333;
+    border-radius: 4px;
+    background-color: #2e2e2e;
+    color: #fff;
+}
+
+.product-reviews form button {
+    background-color: #4CAF50;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.product-reviews form button:hover {
+    background-color: #45a049;
+}

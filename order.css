@@ -1,0 +1,41 @@
+/* Стили для оформления заказа */
+.order {
+    background-color: rgb(60, 60, 60);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+    margin-top: 2rem;
+}
+
+.order h2 {
+    margin-top: 0;
+}
+
+.order form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.order form input, .order form textarea, .order form select, .order form button {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.order form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.order form button:hover {
+    background-color: #45a049;
+}

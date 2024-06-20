@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Интернет-магазин VR-очков</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="delivery.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="img/vr-glasses-svgrepo-com.svg" alt="" class="logo"></a>
+        <nav>
+            <ul>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="delivery.html">Доставка</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <button id="loginBtn">Войти</button>
+            <button id="registerBtn">Регистрация</button>
+        </div>
+        <div class="cart_block">
+            <a href="profile.html" class="cart_block_a" id="profileLink">Профиль</a>
+            <a href="cart.html" id="cart" class="cart_block_a">Корзина</a>
+        </div>
+        <button id="themeToggle">Сменить тему</button>
+    </header>
+
+<div id="registerModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <form onsubmit="register(event)">
+            <input type="text" id="register-username" placeholder="Имя пользователя" required>
+            <input type="email" id="register-email" placeholder="Почта" required>
+            <input type="password" id="register-password" placeholder="Пароль" required>
+            <button type="submit">Зарегистрироваться</button>
+        </form>
+    </div>
+</div>
+
+<div id="loginModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <form onsubmit="login(event)">
+            <input type="email" id="login-email" placeholder="Почта" required>
+            <input type="password" id="login-password" placeholder="Пароль" required>
+            <button type="submit">Войти</button>
+        </form>
+    </div>
+</div>
+
+<main>
+    <section class="delivery">
+        <h2>Информация о доставке</h2>
+        <p>Мы предлагаем различные варианты доставки для вашего удобства. Все заказы обрабатываются и отправляются в течение 1-2 рабочих дней.</p>
+        <h3>Способы доставки</h3>
+        <ul>
+            <li>CDEK: 7-10 рабочих дней</li>
+        </ul>
+        <h3>Стоимость доставки</h3>
+        <p>Стоимость доставки уже заложена в стоимость товара.</p>
+        
+        
+    </section>
+</main>
+
+<footer>
+    <div>© 2024 Интернет-магазин VR-очков</div>
+    <div>
+        <a href="#">Политика конфиденциальности</a>
+        <a href="#">Условия использования</a>
+    </div>
+    <div>
+        Социальные сети:
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+        <a href="#">Instagram</a>
+    </div>
+</footer>
+<script src="script.js"></script>
+<script src="index.js"></script>
+<script>
+    
+</script>
+</body>
+</html>
